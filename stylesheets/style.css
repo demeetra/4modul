@@ -54,23 +54,33 @@ h2{
   padding-bottom: 20%;
 }
 .menu {
+  grid-area: menu;
   border-radius: 5% / 50%;
   border: 4px solid white;
-  grid-area: menu;
 }
 .menu > ul {
-  height: 100%;
   display: inline-table;
-  width: 100%;
+  height: calc(100% + 8px);
+  width: calc(100% + 8px);
+  margin: -4px -4px -4px -4px;
 }
 .menu > ul > li{
   display: table-cell;
-  width: 24.5%;
+  width: 25%;
+  height: 100%;
   text-align: center;
   vertical-align: middle;
-  /* border: 4px solid white; */
 }
 
+.li-hover {
+  border-radius: 20% / 50%;
+  border: 2px solid white;
+}
+
+.li-selected {
+  border-radius: 20% / 50%;
+  border: 4px solid white;
+}
 
 .header0{
   background-image: url('../images/header0.svg');
