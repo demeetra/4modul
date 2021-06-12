@@ -12,5 +12,22 @@
     font-size: 24px;
     line-height: 42px;
   }
+  h3{
+    font-size: 18px;
+    line-height: 31px;
+  }
 }
-@media only screen and (min-width: 1681px) {}
+@media only screen and (min-width: 1681px) {
+  h1{
+    font-size: 42px;
+    line-height: 46px;
+  }
+  h2{
+    font-size: 36px;
+    line-height: 43px;
+  }
+  h3{
+    font-size: 24px;
+    line-height: 42px;
+  }
+}

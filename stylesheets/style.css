@@ -16,7 +16,7 @@ body {
   color: white;
 
 }
-h1{
+h1, h3{
   font-family: "Montserrat-Light";
 }
 h2{
@@ -24,16 +24,28 @@ h2{
 }
 .grid{
   display: grid;
-  grid-template-areas:  '.       .      .      .            .'
-                        '.       .      .      .            .'
-                        '.       logo   menu   menu         .'
-                        'header0 header header header-image .'
-                        '.     text-mk text-mk text-mk     .';
+  grid-template-areas:  '.           .          .            .             .'
+                        '.           .          .            .             .'
+                        '.           logo        menu        menu          .'
+                        '.           .           .           .             .'
+                        '.           .           .           .             .'
+                        'header0     header      header      header-image  .'
+                        'line-border line-border line-border line-border   line-border'
+                        '.           text-mk     text-mk     text-mk       .'
+                        '.           vopr1       vopr2       vopr3         .'
+                        '.           date        adres       time          .'
+                        '.           plak1       plak2       plak3         .'
+                        '.           name1       name2       name3         .'
+                        '.           name-loc1   name-loc2   name-loc3     .'
+                        '.           .           .           .             .'
+                        'line-border2 line-border2 line-border2 line-border2   line-border2'
+                        '.           .           .           .             .'
+                        '.           .           .           .             .';
   grid-template-rows: repeat(3, auto-fill);
   grid-template-columns: 40px repeat(3, 1fr) 40px;
   grid-gap: calc(100vw * 20/1440) calc(100% * 40/1440) ;
-
 }
+
 .logo{
   grid-area: logo;
   background-image: url('../images/logo.svg');
@@ -57,10 +69,7 @@ h2{
   vertical-align: middle;
   /* border: 4px solid white; */
 }
-/* .btn{
-  width: 25%;
-  height: auto;
-} */
+
 
 .header0{
   background-image: url('../images/header0.svg');
@@ -82,6 +91,69 @@ h2{
   padding-bottom: 100%;
   background-size: contain;
 }
+.line-border{
+  grid-area: line-border;
+  padding-bottom: 0.3%;
+  background-color: white;
+}
+.line-border2{
+  grid-area: line-border2;
+  padding-bottom: 0.3%;
+  background-color: white;
+}
 .text-mk{
   grid-area: text-mk;
+}
+.plakat{
+  background-repeat: no-repeat;
+  padding-bottom: 147%;
+  background-size: contain;
+}
+.vopr1{
+  grid-area: vopr1;
+}
+.vopr2{
+  grid-area: vopr2;
+}
+.vopr3{
+  grid-area: vopr3;
+}
+.date{
+  grid-area: date;
+}
+.adres{
+  grid-area: adres;
+}
+.time{
+  grid-area: time;
+}
+.plak1{
+  background-image: url('../images/plak1.svg');
+  grid-area: plak1;
+}
+.plak2{
+  background-image: url('../images/plak2.svg');
+  grid-area: plak2;
+}
+.plak3{
+  background-image: url('../images/plak3.svg');
+  grid-area: plak3;
+}
+.name1{
+  grid-area: name1;
+}
+.name2{
+  grid-area: name2;
+}
+.name3{
+  grid-area: name3;
+}
+.name-loc1{
+  grid-area: name-loc1;
+}
+.name-loc2{
+  grid-area: name-loc2;
+}
+.name-loc3{
+  grid-area: name-loc3;
 }
