@@ -168,7 +168,7 @@ h2{
   padding-top: 5%;
   background-repeat: no-repeat;
   padding-bottom: 147%;
-  background-size: contain;
+  background-size: cover;
 }
 .uslugi{
   background-image: url('../images/uslugi.svg');
