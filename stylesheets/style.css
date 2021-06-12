@@ -40,7 +40,8 @@ h2{
                         '.           .           .           .             .'
                         'line-border2 line-border2 line-border2 line-border2   line-border2'
                         '.           .           .           .             .'
-                        '.           .           .           .             .';
+                        '.           .           .           .             .'
+                        '.           uslugi      magaz       stil          .';
   grid-template-rows: repeat(3, auto-fill);
   grid-template-columns: 40px repeat(3, 1fr) 40px;
   grid-gap: calc(100vw * 20/1440) calc(100% * 40/1440) ;
@@ -104,11 +105,7 @@ h2{
 .text-mk{
   grid-area: text-mk;
 }
-.plakat{
-  background-repeat: no-repeat;
-  padding-bottom: 147%;
-  background-size: contain;
-}
+
 .vopr1{
   grid-area: vopr1;
 }
@@ -126,6 +123,11 @@ h2{
 }
 .time{
   grid-area: time;
+}
+.plakat{
+  background-repeat: no-repeat;
+  padding-bottom: 147%;
+  background-size: contain;
 }
 .plak1{
   background-image: url('../images/plak1.svg');
@@ -156,4 +158,27 @@ h2{
 }
 .name-loc3{
   grid-area: name-loc3;
+}
+.uslugi h1, .magaz h1, .stil h1{
+  font-family: "Montserrat-SemiBold";
+}
+.button{
+  border: 4px solid white;
+  text-align: center;
+  padding-top: 5%;
+  background-repeat: no-repeat;
+  padding-bottom: 147%;
+  background-size: contain;
+}
+.uslugi{
+  background-image: url('../images/uslugi.svg');
+  grid-area: uslugi;
+}
+.magaz{
+  background-image: url('../images/magaz.svg');
+  grid-area: magaz;
+}
+.stil{
+  background-image: url('../images/stil.svg');
+  grid-area: stil;
 }
