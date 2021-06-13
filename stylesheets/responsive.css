@@ -19,15 +19,15 @@
 }
 @media only screen and (min-width: 1681px) {
   h1{
-    font-size: 42px;
-    line-height: 46px;
+    font-size: 40px;
+    line-height: 44px;
   }
-  h2{
-    font-size: 36px;
-    line-height: 43px;
+  h2, input, button{
+    font-size: 30px;
+    line-height: 50px;
   }
   h3{
-    font-size: 24px;
-    line-height: 42px;
+    font-size: 20px;
+    line-height: 33px;
   }
 }
