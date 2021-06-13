@@ -1,0 +1,36 @@
+.sign-up{
+  grid-area: sign-up;
+  padding-bottom: 87.5%;
+  position: relative;
+}
+.forma{
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+  box-sizing: border-box;
+  border: 4px solid white;
+  background-color: rgba(231, 33, 116, 1);
+  width: 100%;
+  height: 100%;
+  border-radius: 7% / 8%;
+  text-align: center;
+}
+.txt-sign-up{
+  margin-top: 5%;
+}
+.forma > form > input {
+  box-sizing: border-box;
+  padding-left: 5%;
+}
+.forma > form > button {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+}
+.forma > form > input, .forma > form > button {
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  border: none;
+  margin-top: 5%;
+  width: 80%;
+  border-radius: 5% / 20%;
+}
