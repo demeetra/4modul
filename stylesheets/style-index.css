@@ -1,4 +1,4 @@
-.grid-main-content {
+.grid-index-content {
   grid-template-areas:  '.           .           .           .             .'
                         'header0     header      header      header-image  .'
                         'line-border line-border line-border line-border   line-border'
@@ -73,11 +73,7 @@
 .time{
   grid-area: time;
 }
-.plakat{
-  background-repeat: no-repeat;
-  padding-bottom: 147%;
-  background-size: contain;
-}
+
 .plak1{
   background-image: url('../images/plak1.svg');
   grid-area: plak1;
@@ -116,9 +112,6 @@
   border-radius: 7% / 5%;
   text-align: center;
   padding-top: 5%;
-  background-repeat: no-repeat;
-  padding-bottom: 147%;
-  background-size: cover;
   filter: saturate(0);
   cursor: pointer;
 }
