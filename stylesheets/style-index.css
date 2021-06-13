@@ -21,7 +21,7 @@
 .header0{
   background-image: url('../images/header0.svg');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100% 100%;
   grid-area: header0 / header0 / header / header;
 
 }
@@ -29,8 +29,11 @@
   font-family: "Montserrat-Light";
 }
 .header{
-  margin-top: 10%;
-  margin-right: 5%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  margin-right: 10%;
   grid-area: header;
   color: black;
 }
