@@ -8,7 +8,7 @@
     font-size: 36px;
     line-height: 43px;
   }
-  h2{
+  h2, input, button{
     font-size: 24px;
     line-height: 42px;
   }
