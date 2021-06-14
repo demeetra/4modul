@@ -30,8 +30,8 @@ h3,
 
 .grid {
   display: grid;
-  grid-template-columns: 40px repeat(3, 1fr) 40px;
-  grid-gap: calc(100vw * 20/1440) calc(100% * 40/1440) ;
+  grid-template-columns: calc(100vw * 40/1440) repeat(3, 1fr) calc(100vw * 40/1440);
+  grid-gap: calc(100vw * 20/1440) calc(100vw * 40/1440);
 }
 .grid-menu {
   grid-template-areas:  '.           .          .            .             .'
@@ -78,6 +78,29 @@ h3,
 }
 .menu > ul > li:hover {
   border: 2px solid white;
+}
+.menu > ul > li > ul {
+  display: none;
+  position: absolute;
+  top: calc(100vw * 40/1440);
+  width: calc(100vw * 210 / 1440);
+  border: 2px solid white;
+  background-color: black;
+  border-radius: 20% / 20%;
+  box-sizing: border-box;
+}
+.menu > ul > li:hover > ul {
+  display:inherit;
+  margin-left: -2px;
+}
+.menu > ul > li > ul > li {
+  width: 100%;
+  padding-top: 5%;
+  padding-bottom: 2.5%;
+  min-height: calc(100vw * 40 / 1440);
+  float:none;
+  display:list-item;
+  position: relative;
 }
 /* content start*/
 
