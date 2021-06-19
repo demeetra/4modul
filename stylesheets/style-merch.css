@@ -1,0 +1,74 @@
+.menu > ul > li:nth-child(2) {
+  border: 4px solid white;
+}
+
+.grid-merch-content{
+  grid-template-areas:  '.           .           .           .             .'
+                        '.           name-merch  .           .             .'
+                        'line-border line-border line-border line-border   line-border'
+                        '.           .           .           .             .'
+                        '.           merch1      merch2      merch3        .'
+                        '.           merch1-txt  merch2-txt  merch3-txt    .'
+                        '.           merch-txt1  merch-txt2  merch-txt3    .'
+                        '.           merch4      .           .             .'
+                        '.           merch4-txt  .           .             .'
+                        '.           merch-txt4  .           .             .'
+                        '.           .           .           .             .'
+                        'line-border2 line-border2 line-border2 line-border2   line-border2'
+                        '.           .           .           .             .'
+                        '.           .           .           .             .';
+}
+.name-merch{
+  grid-area: name-merch;
+}
+.merch{
+  background-repeat: no-repeat;
+  padding-bottom: 70%;
+  background-size: cover;
+  border: 4px solid white;
+  border-radius: 7% / 10%;
+  cursor: pointer;
+}
+.merch1-txt h1, .merch2-txt h1, .merch3-txt h1, .merch4-txt h1{
+  margin-bottom: 3%;
+}
+.merch1{
+  background-image: url('../images/merch1.svg');
+  grid-area: merch1;
+}
+.merch1-txt{
+  grid-area: merch1-txt;
+}
+.merch-txt1{
+  grid-area: merch-txt1;
+}
+.merch2{
+  background-image: url('../images/merch2.svg');
+  grid-area: merch2;
+}
+.merch2-txt{
+  grid-area: merch2-txt;
+}
+.merch-txt2{
+  grid-area: merch-txt2;
+}
+.merch3{
+  background-image: url('../images/merch3.svg');
+  grid-area: merch3;
+}
+.merch3-txt{
+  grid-area: merch3-txt;
+}
+.merch-txt3{
+  grid-area: merch-txt3;
+}
+.merch4{
+  background-image: url('../images/merch4.svg');
+  grid-area: merch4;
+}
+.merch4-txt{
+  grid-area: merch4-txt;
+}
+.merch-txt4{
+  grid-area: merch-txt4;
+}
