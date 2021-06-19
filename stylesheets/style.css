@@ -24,7 +24,8 @@ h1, h2, input, button{
 h3,
 .pricheska1-txt h2, .pricheska2-txt h2, .pricheska3-txt h2, .pricheska4-txt h2, .pricheska5-txt h2, .pricheska6-txt h2,
 .pr-txt1 h2, .pr-txt2 h2, .pr-txt3 h2, .pr-txt4 h2, .pr-txt5 h2, .pr-txt6 h2,
-.prich-txt1 h2, .prich-txt2 h2, .prich-txt3 h2, .prich-txt4 h2, .prich-txt5 h2, .prich-txt6 h2{
+.prich-txt1 h2, .prich-txt2 h2, .prich-txt3 h2, .prich-txt4 h2, .prich-txt5 h2, .prich-txt6 h2,
+.book-txt h2, .book-txt2 h2{
   font-family: "Montserrat-Light";
 }
 
@@ -43,6 +44,7 @@ h3,
 .grid-footer {
   grid-template-areas:  '.           .           .           .             .'
                         '.           footer      footer      footer        .'
+                        '.           .           .           .             .'
                         '.           .           .           .             .'
                         '.           .           .           .             .';
 }
@@ -103,13 +105,47 @@ h3,
   position: relative;
 }
 /* content start*/
-
+.line-border{
+  grid-area: line-border;
+  padding-bottom: 0.2%;
+  background-color: white;
+}
+.line-border2{
+  grid-area: line-border2;
+  padding-bottom: 0.2%;
+  background-color: white;
+}
 .plakat{
   background-repeat: no-repeat;
   padding-bottom: 147%;
   background-size: cover;
 }
+.yellow-star{
+  background-color: rgba(250, 179, 52, 1);
+}
+.white-star{
+  background-color: white;
+}
 
+.star{
+  display: inline-block;
+  -webkit-mask: url('https://raw.githubusercontent.com/demeetra/4modul/main/images/star.svg') center center / contain;
+  width: 8%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  padding-bottom: 12.5%;
+}
+.pr-txt{
+  width: 40%;
+  height: 100%;
+  vertical-align: top;
+  display: inline-flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  width: 40%;
+  display: inline-block;
+}
 /* content end */
 .footer{
   grid-area: footer;

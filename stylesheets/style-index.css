@@ -15,6 +15,7 @@
                         '.           uslugi      magaz       stil          .'
                         '.           .           .           .             .'
                         '.           master      master      sign-up       .'
+                        '.           .           .           .             .'
                         '.           .           .           .             .';
 }
 
@@ -44,16 +45,7 @@
   padding-bottom: 100%;
   background-size: contain;
 }
-.line-border{
-  grid-area: line-border;
-  padding-bottom: 0.3%;
-  background-color: white;
-}
-.line-border2{
-  grid-area: line-border2;
-  padding-bottom: 0.3%;
-  background-color: white;
-}
+
 .text-mk{
   grid-area: text-mk;
 }

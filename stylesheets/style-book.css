@@ -1,0 +1,74 @@
+.menu > ul > li:nth-child(2) {
+  border: 4px solid white;
+}
+
+.grid-book-content{
+  display: grid;
+  grid-template-columns: calc(100vw * 40/1440) repeat(4, 1fr) calc(100vw * 40/1440);
+  grid-gap: calc(100vw * 20/1440) calc(100vw * 40/1440);
+  grid-template-areas:  '.            .             .            .            .             .'
+                        '.            name-book     .            .            .             .'
+                        'line-border  line-border   line-border  line-border  line-border   line-border'
+                        '.            .             .            .            .             .'
+                        '.            book-img1     book-img1    book-img2    book-img2     .'
+                        '.            book-img1     book-img1    book-img3    book-img3     .'
+                        '.            .             .            .            .             .'
+                        '.            book-sale     book-txt     book-txt     book-txt      .'
+                        '.            book-sale     book-txt2    book-txt2    book-txt2     .'
+                        '.            book-sale     book-btn     .            .             .'
+                        '.            book-sale     .            .            .             .'
+                        '.            .             .            .            .             .'
+                        'line-border2 line-border2  line-border2 line-border2 line-border2  line-border2'
+                        '.            .             .            .            .             .'
+                        '.            .             .            .            .             .';
+}
+.name-book{
+  grid-area: name-book;
+}
+.book-img{
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 4px solid white;
+  cursor: pointer;
+}
+.book-img1{
+  padding-bottom: 110%;
+  border-radius: 7% / 6%;
+  grid-area: book-img1;
+  background-image: url('../images/book-img1.svg');
+}
+.book-img2{
+  padding-bottom: 50%;
+  border-radius: 7% / 14%;
+  grid-area: book-img2;
+  background-image: url('../images/book-img2.svg');
+}
+.book-img3{
+  padding-bottom: 50%;
+  border-radius: 7% / 14%;
+  grid-area: book-img3;
+  background-image: url('../images/book-img3.svg');
+}
+.book-txt{
+  grid-area: book-txt;
+}
+.book-txt2{
+  grid-area: book-txt2;
+}
+.book-btn{
+  border: 4px solid white;
+  cursor: pointer;
+  grid-area: book-btn;
+  padding-bottom: 7%;
+  border-radius: 15% / 50%;
+  text-align: center;
+  padding-top: 5%;
+}
+.book-sale{
+  grid-area: book-sale;
+  background-image: url('../images/book-sale.svg');
+  padding-bottom: 20%;
+  border: 4px solid white;
+  cursor: pointer;
+  border-radius: 12% / 10%;
+}
