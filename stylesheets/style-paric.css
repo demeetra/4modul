@@ -1,0 +1,116 @@
+.menu > ul > li:nth-child(2) {
+  border: 4px solid white;
+}
+
+.grid-uslugi-content{
+  grid-template-areas:  '.           .           .           .             .'
+                        '.           name-uslugi .           .             .'
+                        'line-border line-border line-border line-border   line-border'
+                        '.           .           .           .             .'
+                        '.           pricheska1  pricheska2  pricheska3    .'
+                        '.  pricheska1-txt   pricheska2-txt  pricheska3-txt .'
+                        '.           pr-txt1     pr-txt2     pr-txt3       .'
+                        '.           prich-txt1  prich-txt2  prich-txt3    .'
+                        '.           .           .           .             .'
+                        '.           .           .           .             .'
+                        '.           pricheska4  pricheska5  pricheska6    .'
+                        '.  pricheska4-txt   pricheska5-txt  pricheska6-txt .'
+                        '.           pr-txt4     pr-txt5     pr-txt6       .'
+                        '.           prich-txt4  prich-txt5  prich-txt6    .'
+                        '.           .           .           .             .'
+                        'line-border2 line-border2 line-border2 line-border2   line-border2'
+                        '.           .           .           .             .'
+                        '.           .           .           .             .';
+}
+.name-uslugi{
+  grid-area: name-uslugi;
+}
+
+.pricheska{
+  border: 4px solid white;
+  border-radius: 7% / 5%;
+  cursor: pointer;
+}
+.pricheska1{
+  background-image: url('../images/pricheska1.svg');
+  grid-area: pricheska1;
+}
+.pricheska2{
+  background-image: url('../images/pricheska2.svg');
+  grid-area: pricheska2;
+}
+.pricheska3{
+  background-image: url('../images/pricheska3.svg');
+  grid-area: pricheska3;
+}
+.pricheska4{
+  background-image: url('../images/pricheska4.svg');
+  grid-area: pricheska4;
+}
+.pricheska5{
+  background-image: url('../images/pricheska5.svg');
+  grid-area: pricheska5;
+}
+.pricheska6{
+  background-image: url('../images/pricheska6.svg');
+  grid-area: pricheska6;
+}
+.pricheska1-txt h1, .pricheska2-txt h1, .pricheska3-txt h1, .pricheska4-txt h1, .pricheska5-txt h1, .pricheska6-txt h1{
+  margin-bottom: 3%;
+}
+.pricheska1-txt{
+  grid-area: pricheska1-txt;
+}
+.pricheska2-txt{
+  grid-area: pricheska2-txt;
+}
+.pricheska3-txt{
+  grid-area: pricheska3-txt;
+}
+.pricheska4-txt{
+  grid-area: pricheska4-txt;
+}
+.pricheska5-txt{
+  grid-area: pricheska5-txt;
+}
+.pricheska6-txt{
+  grid-area: pricheska6-txt;
+}
+
+.pr-txt1{
+  grid-area: pr-txt1;
+}
+.pr-txt2{
+  grid-area: pr-txt2;
+}
+.pr-txt3{
+  grid-area: pr-txt3;
+}
+.pr-txt4{
+  grid-area: pr-txt4;
+}
+.pr-txt5{
+  grid-area: pr-txt5;
+}
+.pr-txt6{
+  grid-area: pr-txt6;
+}
+
+.prich-txt1{
+  grid-area: prich-txt1;
+}
+.prich-txt2{
+  grid-area: prich-txt2;
+}
+.prich-txt3{
+  grid-area: prich-txt3;
+}
+.prich-txt4{
+  grid-area: prich-txt4;
+}
+.prich-txt5{
+  grid-area: prich-txt5;
+}
+.prich-txt6{
+  grid-area: prich-txt6;
+}

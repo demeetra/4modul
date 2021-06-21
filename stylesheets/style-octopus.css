@@ -1,0 +1,78 @@
+.menu > ul > li:nth-child(3) {
+  border: 4px solid white;
+}
+
+.grid-octopus-content{
+  display: grid;
+  grid-template-columns: calc(100vw * 40/1440) repeat(6, 1fr) calc(100vw * 40/1440);
+  grid-gap: calc(100vw * 20/1440) calc(100vw * 40/1440);
+  grid-template-areas:  '.           .           .           .             .           .           .             .'
+                        '.           .           .           .             .           .           .             .'
+                        '.           octopus1    octopus2    octopus3      octopus4    octopus5    octopus6      .'
+                        '.           .           .           .             .           .           .             .'
+                        '.           .           .           .             .           .           .             .'
+                        '.           .           .           .             .           .           .             .'
+                        '.           .           .           .             .           .           .             .'
+                        '.           octopus7    octopus8    octopus9      octopus10   octopus11   octopus12     .'
+                        '.           .           .           .             .           .           .             .'
+                        '.           .           .           .             .           .           .             .'
+                        '.           .           .           .             .           .           .             .'
+                        '.           .           .           .             .           .           .             .';
+}
+.octopus{
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 4px solid white;
+  width: 96%;
+  padding-bottom: 96%;
+  border-radius: 50%;
+
+}
+.octopus1{
+  grid-area: octopus1;
+  background-image: url('../images/octopus1.svg');
+}
+.octopus2{
+  grid-area: octopus2;
+  background-image: url('../images/octopus2.svg');
+}
+.octopus3{
+  grid-area: octopus3;
+  background-image: url('../images/octopus3.svg');
+}
+.octopus4{
+  grid-area: octopus4;
+  background-image: url('../images/octopus1.svg');
+}
+.octopus5{
+  grid-area: octopus5;
+  background-image: url('../images/octopus2.svg');
+}
+.octopus6{
+  grid-area: octopus6;
+  background-image: url('../images/octopus3.svg');
+}
+.octopus7{
+  grid-area: octopus7;
+  background-image: url('../images/octopus1.svg');
+}
+.octopus8{
+  grid-area: octopus8;
+  background-image: url('../images/octopus2.svg');
+}
+.octopus9{
+  grid-area: octopus9;
+  background-image: url('../images/octopus3.svg');
+}
+.octopus10{
+  grid-area: octopus10;
+  background-image: url('../images/octopus1.svg');
+}
+.octopus11{
+  grid-area: octopus11;
+  background-image: url('../images/octopus2.svg');
+}
+.octopus12{
+  grid-area: octopus12;
+  background-image: url('../images/octopus3.svg');
+}
