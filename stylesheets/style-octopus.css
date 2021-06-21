@@ -9,11 +9,11 @@
   grid-template-areas:  '.           .           .           .             .           .           .             .'
                         '.           .           .           .             .           .           .             .'
                         '.           octopus1    octopus2    octopus3      octopus4    octopus5    octopus6      .'
-                        '.           .           .           .             .           .           .             .'
-                        '.           .           .           .             .           .           .             .'
+                        '.           tx-oct1     tx-oct2     tx-oct3       tx-oct4     tx-oct5     tx-oct6       .'
                         '.           .           .           .             .           .           .             .'
                         '.           .           .           .             .           .           .             .'
                         '.           octopus7    octopus8    octopus9      octopus10   octopus11   octopus12     .'
+                        '.           tx-oct7     tx-oct8     tx-oct9       tx-oct10    tx-oct11    tx-oct12      .'
                         '.           .           .           .             .           .           .             .'
                         '.           .           .           .             .           .           .             .'
                         '.           .           .           .             .           .           .             .'
@@ -75,4 +75,60 @@
 .octopus12{
   grid-area: octopus12;
   background-image: url('../images/octopus3.svg');
+}
+.tx-oct1{
+  grid-area: tx-oct1;
+  text-align: center;
+}
+.tx-oct2{
+  grid-area: tx-oct2;
+  text-align: center;
+}
+.tx-oct3{
+  grid-area: tx-oct3;
+  text-align: center;
+}
+.tx-oct4{
+  grid-area: tx-oct4;
+  text-align: center;
+}
+.tx-oct5{
+  grid-area: tx-oct5;
+  text-align: center;
+}
+.tx-oct6{
+  grid-area: tx-oct6;
+  text-align: center;
+}
+.tx-oct7{
+  grid-area: tx-oct7;
+  text-align: center;
+}
+.tx-oct8{
+  grid-area: tx-oct8;
+  text-align: center;
+}
+.tx-oct9{
+  grid-area: tx-oct9;
+  text-align: center;
+}
+.tx-oct10{
+  grid-area: tx-oct10;
+  text-align: center;
+}
+.tx-oct11{
+  grid-area: tx-oct11;
+  text-align: center;
+}
+.tx-oct12{
+  grid-area: tx-oct12;
+  text-align: center;
+}
+.star3{
+  display: inline-block;
+  -webkit-mask: url('https://raw.githubusercontent.com/demeetra/4modul/main/images/star.svg') center center / contain;
+  width: 12%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  padding-bottom: 12%;
 }
