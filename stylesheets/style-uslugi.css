@@ -49,3 +49,12 @@
   background-image: url('../images/usluga3.svg');
   grid-area: usluga3;
 }
+.usl-txt1{
+  grid-area: usluga1;
+}
+.usl-txt2{
+  grid-area: usluga2;
+}
+.usl-txt3{
+  grid-area: usluga3;
+}
