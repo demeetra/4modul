@@ -7,8 +7,9 @@
                         '.           new-usluga  new-usluga  new-usluga    .'
                         '.           .           .           .             .'
                         '.           usluga1     usluga2     usluga3       .'
+                        '.           usl-txt1    usl-txt2    usl-txt3      .'
                         '.           .           .           .             .'
-                        '.           usluga4     usluga4     us-txt4       .'
+                        '.           usluga4     usluga4     usl-txt4      .'
                         '.           .           .           .             .'
                         '.           .           .           .             .';
 }
@@ -22,6 +23,14 @@
   border: calc(100vw * 4 / 1440) solid white;
   border-radius: 4% / 11%;
 }
+/* .row1{
+  grid-area: new-usluga;
+  background-image: url('../images/row.svg');
+  padding-bottom: 20%;
+  background-repeat: no-repeat;
+  background-size: contein;
+
+} */
 .new-usluga-txt{
   color: black;
   margin-top: 30%;
@@ -49,12 +58,32 @@
   background-image: url('../images/usluga3.svg');
   grid-area: usluga3;
 }
+.usluga4{
+  border-radius: 4% / 6.5%;
+  cursor: pointer;
+  border: calc(100vw * 4 / 1440) solid white;
+  background-image: url('../images/usluga4.svg');
+  grid-area: usluga4;
+  background-repeat: no-repeat;
+  padding-bottom: 60%;
+  background-size: cover;
+}
 .usl-txt1{
-  grid-area: usluga1;
+  grid-area: usl-txt1;
 }
 .usl-txt2{
-  grid-area: usluga2;
+  grid-area: usl-txt2;
 }
 .usl-txt3{
-  grid-area: usluga3;
+  grid-area: usl-txt3;
+}
+.usl-txt4{
+  grid-area: usl-txt4;
+}
+.link{
+  text-decoration: auto;
+  color: white;
+}
+.link:hover{
+  text-decoration: underline;
 }

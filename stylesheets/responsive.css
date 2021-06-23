@@ -1,8 +1,47 @@
-@media only screen and (orientation: portrait) {}
+@media only screen and (orientation: portrait) {
+  h1{
+    font-size: 18px;
+    line-height: 30px;
+  }
+  h2, input, button{
+    font-size: 14px;
+    line-height: 36px;
+  }
+  h3{
+    font-size: 12px;
+    line-height: 26px;
+  }
+}
 
-@media only screen and (min-width: 1024px) and (max-width: 1080px) {}
-@media only screen and (min-width: 1080px) and (max-width: 1280px) {}
-@media only screen and (min-width: 1280px) and (max-width: 1440px) {}
+
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+  h1{
+    font-size: 24px;
+    line-height: 36px;
+  }
+  h2, input, button{
+    font-size: 14px;
+    line-height: 36px;
+  }
+  h3{
+    font-size: 12px;
+    line-height: 26px;
+  }
+}
+@media only screen and (min-width: 1280px) and (max-width: 1440px) {
+  h1{
+    font-size: 24px;
+    line-height: 38px;
+  }
+  h2, input, button{
+    font-size: 20px;
+    line-height: 38px;
+  }
+  h3{
+    font-size: 18px;
+    line-height: 31px;
+  }
+}
 @media only screen and (min-width: 1440px) and (max-width: 1680px) {
   h1{
     font-size: 36px;
