@@ -38,6 +38,15 @@ function SignUp(cls){
   }
   ShowReply(text);
 }
+function SetDisplay(event, target) {
+  let classes = event.target.className.split(/\s+/);
+  for (let i = 0; i < classes.length; i++) {
+    if (classes[i].endsWith("-grid")) {
+      console.log(".plakat-btn." + classes[i]);
+      $(".plakat-btn." + classes[i]).css("display", target);
+    }
+  }
+}
 
 $(document).ready(function() {
   $("button[name=close]").on("click", function(event) {
@@ -64,10 +73,19 @@ $(document).ready(function() {
   $(".book-btn").on("click", function(event) {
     ShowReply("Спасибо за покупку!");
   });
+  $(".plakat-btn").on("click", function(event) {
+    ShowReply("Спасибо за покупку!");
+  });
   $('.go-up').click(function(){
      $('html, body').animate({scrollTop:0}, 'slow');
   });
   $(".menu-buter-image").on("click", function(event) {
     $(".menu").show();
+  });
+  $(".pricheska").mouseenter(function (event) {
+      SetDisplay(event, "flex");
+  });
+  $(".plakat-btn").mouseleave(function (event) {
+    SetDisplay(event, "none");
   });
 });

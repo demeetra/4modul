@@ -29,22 +29,38 @@
   border-radius: 7% / 5%;
   cursor: pointer;
 }
-.pricheska1{
-  background-image: url('../images/pricheska1.svg');
-  grid-area: pricheska1;
-}
+
 .plakat-btn{
   grid-area: pricheska1;
   background-color: black;
   opacity: 80%;
   display: none;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
   vertical-align: middle;
+  height: 100%;
 }
-.pricheska1:hover .plakat-btn{
-  display: block;
+.pricheska1-grid {
+  grid-area: pricheska1;
 }
-
+.pricheska2-grid{
+  grid-area: pricheska2;
+}
+.pricheska3-grid{
+  grid-area: pricheska3;
+}
+.pricheska4-grid{
+  grid-area: pricheska4;
+}
+.pricheska5-grid{
+  grid-area: pricheska5;
+}
+.pricheska6-grid{
+  grid-area: pricheska6;
+}
+.pricheska1{
+  background-image: url('../images/pricheska1.svg');
+}
 .pricheska2{
   background-image: url('../images/pricheska2.svg');
   grid-area: pricheska2;
