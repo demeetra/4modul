@@ -34,12 +34,7 @@ h3,
   grid-template-columns: calc(100vw * 40/1440) repeat(3, 1fr) calc(100vw * 40/1440);
   grid-gap: calc(100vw * 20/1440) calc(100vw * 40/1440);
 }
-.grid-menu {
-  grid-template-areas:  '.           .          .            .             .'
-                        '.           .          .            .             .'
-                        '.           logo        menu        menu          .'
-                        '.           .           .           .             .';
-}
+
 .grid-footer {
   grid-template-areas:  '.           .           .           .             .'
                         '.           footer      footer      footer        .'

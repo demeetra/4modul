@@ -67,4 +67,7 @@ $(document).ready(function() {
   $('.go-up').click(function(){
      $('html, body').animate({scrollTop:0}, 'slow');
   });
+  $(".menu-buter-image").on("click", function(event) {
+    $(".menu").show();
+  });
 });
