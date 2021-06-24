@@ -1,0 +1,16 @@
+@media only screen and (max-width: 768px) {
+  .go-up {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .footer-border{
+    border: calc(100vw * 4 / 1440) solid white;
+    border-radius: 7% / 50%;
+    padding-bottom: 12%;
+  }
+  .grid-footer > .line-border {
+    display: none;
+  }
+}

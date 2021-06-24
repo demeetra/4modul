@@ -36,7 +36,7 @@ h3,
 }
 
 .grid-footer {
-  grid-template-areas:  '.           .           .           .             .'
+  grid-template-areas:  'line-border line-border line-border line-border line-border'
                         '.           footer      footer      footer        .'
                         '.           .           .           .             .'
                         '.           .           .           .             .'
@@ -105,11 +105,6 @@ h3,
 /* content end */
 .footer{
   grid-area: footer;
-}
-.footer-border{
-  border: calc(100vw * 4 / 1440) solid white;
-  border-radius: 7% / 50%;
-  padding-bottom: 12%;
 }
 .footer-txt h2{
   font-family: "Montserrat-Light";
