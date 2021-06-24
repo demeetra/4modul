@@ -24,7 +24,7 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
   grid-area: header0 / header0 / header / header;
-
+  padding-bottom: 43.5%;
 }
 .header h1{
   font-family: "Montserrat-Light";
@@ -77,7 +77,6 @@
 .plak1{
   background-image: url('../images/plak1.svg');
   grid-area: plak1;
-  cursor: pointer;
 }
 .plak2{
   background-image: url('../images/plak2.svg');
@@ -86,6 +85,7 @@
 .plak3{
   background-image: url('../images/plak3.svg');
   grid-area: plak3;
+  cursor: pointer;
 }
 .name1{
   grid-area: name1;
@@ -133,9 +133,7 @@
 .master{
   grid-area: master;
 }
-.master h1{
-  cursor: pointer;
-}
+
 .octopuses{
   padding-top: 4%;
   display: inline-block;
@@ -152,6 +150,11 @@
   border-radius: 50%;
   margin-left: 10%;
   margin-right: 10%;
+  border-radius: 50% / 50%;
+  transition: transform 2s ease-in-out;
+}
+.octopus:hover{
+  transform: rotate(180deg);
 }
 .oct1{
   background-image: url('../images/octopus1.svg');

@@ -48,14 +48,14 @@ div.sim-slider-arrow-left {
   left: 1%;
   top: 43%;
   display: block;
-  background-image: url("../images/sim-arrow-left.png");
+  background-image: url("../images/sim-arrow-left.svg");
 }
 
 div.sim-slider-arrow-right {
   right: 1%;
   top: 43%;
   display: block;
-  background-image: url("../images/sim-arrow-right.png");
+  background-image: url("../images/sim-arrow-right.svg");
 }
 
 div.sim-slider-arrow-left:hover {
@@ -147,11 +147,4 @@ div.sim-slider-arrow-right:hover {
 }
 .usl-txt4{
   grid-area: usl-txt4;
-}
-.link{
-  text-decoration: auto;
-  color: white;
-}
-.link:hover{
-  text-decoration: underline;
 }

@@ -61,4 +61,7 @@ $(document).ready(function() {
   $(".menu-li-sighup").on("click", function(event) {
     ShowModalForma();
   });
+  $(".book-btn").on("click", function(event) {
+    ShowReply("Спасибо за покупку!");
+  });
 });

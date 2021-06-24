@@ -38,7 +38,6 @@ h3,
   grid-template-areas:  '.           .          .            .             .'
                         '.           .          .            .             .'
                         '.           logo        menu        menu          .'
-                        '.           .           .           .             .'
                         '.           .           .           .             .';
 }
 .grid-footer {
@@ -57,7 +56,13 @@ h3,
   cursor: pointer;
   background-size: 75% 100%;
 }
-
+.link{
+  text-decoration: auto;
+  color: white;
+}
+.link:hover{
+  text-decoration: underline;
+}
 .menu {
   grid-area: menu;
   border-radius: 5% / 50%;
@@ -172,4 +177,8 @@ h3,
   height: 30px;
   transform: rotate(45deg);
   cursor: pointer;
+}
+.go-up:hover{
+  width: 40px;
+  height: 40px;
 }
