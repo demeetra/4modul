@@ -92,6 +92,7 @@ h3,
   box-sizing: border-box;
 }
 .menu > ul > li:hover > ul {
+  z-index: 5;
   display:inherit;
   margin-left: calc(100vw * -4 / 1440);
 }
@@ -171,6 +172,4 @@ h3,
   height: 30px;
   transform: rotate(45deg);
   cursor: pointer;
-}
-.go-up:hover{
 }

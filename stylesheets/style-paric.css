@@ -33,6 +33,18 @@
   background-image: url('../images/pricheska1.svg');
   grid-area: pricheska1;
 }
+.plakat-btn{
+  grid-area: pricheska1;
+  background-color: black;
+  opacity: 80%;
+  display: none;
+  text-align: center;
+  vertical-align: middle;
+}
+.pricheska1:hover .plakat-btn{
+  display: block;
+}
+
 .pricheska2{
   background-image: url('../images/pricheska2.svg');
   grid-area: pricheska2;

@@ -7,14 +7,21 @@
     <link rel="stylesheet" href="stylesheets/style.css">
     <link rel="stylesheet" href="stylesheets/style-index.css">
     <link rel="stylesheet" href="stylesheets/responsive.css">
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <script src="scripts/dynamic.js"></script> -->
+
   </head>
+  <script type="text/javascript">
+  $(function() {
+      $('.go-up').click(function(){
+         $('html, body').animate({scrollTop:0}, 'slow');
+     });
+  });
+  </script>
   <body>
 
     <div class="grid grid-menu">
-      <div class="logo" onclick="location.href='index.html';">
+      <div id="top" class="logo" onclick="location.href='index.html';">
         <a class="link" href=""></a>
       </div>
       <div class="menu">
@@ -109,7 +116,8 @@
         <h2>Контакты<br>Пн-Пт<br>10:00 - 18:00</h2>
         <h2>+52-433-456-67-56<br>Пляж Барра Вьеха, Мексика, Герреро, Акапулько</h2>
       </div>
-      <div class="footer go-up"></div>
+      <div class="footer go-up">
+      </div>
     </div>
 
   </body>

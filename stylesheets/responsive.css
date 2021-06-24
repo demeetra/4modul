@@ -13,6 +13,46 @@
   }
 }
 
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    /* 320–475 (iPhone SE) */
+    h1{
+      font-size: 12px;
+      line-height: 26px;
+    }
+    h2, input, button{
+      font-size: 14px;
+      line-height: 36px;
+    }
+    h3{
+      font-size: 12px;
+      line-height: 26px;
+    }
+
+    .grid-index-content {
+      grid-template-areas:  '.           .           .           .             .'
+                            'header0     header      header      header        .'
+                            'line-border line-border line-border line-border   line-border'
+                            '.           text-mk     text-mk     text-mk       .'
+                            '.           date        .           time          .'
+                            '.           plak1       plak2       plak3         .'
+                            '.           .           .           .             .'
+                            'line-border2 line-border2 line-border2 line-border2   line-border2'
+                            '.           .           .           .             .'
+                            '.           .           .           .             .'
+                            '.           uslugi      uslugi      uslugi        .'
+                            '.           magaz       magaz       magaz         .'
+                            '.           stil        stil        stil          .'
+                            '.           .           .           .             .'
+                            '.           master      master      sign-up       .'
+                            '.           .           .           .             .'
+                            '.           .           .           .             .';
+    }
+
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    /* iPad portrait */
+
+}
 
 @media only screen and (min-width: 1024px) and (max-width: 1280px) {
   h1{
