@@ -24,8 +24,13 @@
   width: 96%;
   padding-bottom: 96%;
   border-radius: 50%;
-
+  border-radius: 50% / 50%;
+  transition: transform 2s ease-in-out;
 }
+.octopus:hover{
+  transform: rotate(180deg);
+}
+
 .octopus1{
   grid-area: octopus1;
   background-image: url('../images/octopus1.svg');

@@ -28,7 +28,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   border: calc(100vw * 4 / 1440) solid white;
-  cursor: pointer;
 }
 .book-img1{
   padding-bottom: 110%;
@@ -62,6 +61,9 @@
   border-radius: 15% / 50%;
   text-align: center;
   padding-top: 5%;
+}
+.book-btn:hover{
+  background-color: rgba(231, 33, 116, 1);
 }
 .star2{
   display: inline-block;
