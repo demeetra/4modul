@@ -43,11 +43,35 @@
                             '.           magaz       magaz       magaz         .'
                             '.           stil        stil        stil          .'
                             '.           .           .           .             .'
-                            '.           master      master      sign-up       .'
+                            '.           sign-up     sign-up     sign-up       .'
                             '.           .           .           .             .'
                             '.           .           .           .             .';
-    }
 
+      grid-template-columns: calc(100vw * 0/1440) repeat(3, 1fr) calc(100vw * 0/1440);
+      grid-gap: calc(100vw * 20/1440) calc(100vw * 40/1440);
+    }
+    .header-image, .vopr1, .vopr2, .vopr3, .adres, .name1, .name2, .name3, .name-loc1, .name-loc2, .name-loc3, .master {
+      display: none;
+    }
+    .time {
+      text-align: right;
+    }
+    .uslugi, .magaz, .stil {
+      padding-bottom: 32%;
+      border-radius: 10% / 20%;
+      background-position-y: bottom;
+      text-align: right;
+      padding-right: 10%;
+    }
+  .uslugi{
+    background-image: url('../images/phone-uslugi.svg');
+  }
+  .magaz{
+    background-image: url('../images/phone-magaz.svg');
+  }
+  .stil{
+    background-image: url('../images/phone-stil.svg');
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
     /* iPad portrait */
