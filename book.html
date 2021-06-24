@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="stylesheets/style.css">
     <link rel="stylesheet" href="stylesheets/style-book.css">
     <link rel="stylesheet" href="stylesheets/responsive.css">
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <script src="scripts/dynamic.js"></script> -->
+    <script src="scripts/modal.js"></script>
   </head>
   <body>
 
@@ -30,7 +30,7 @@
             </ul>
           </li>
           <li onclick="location.href='octopus.html';" class=""><h2>стилисты</h2></li>
-          <li class=""><h2>запись</h2></li>
+          <li class="menu-li-sighup"><h2>запись</h2></li>
         </ul>
       </div>
     </div>
@@ -69,6 +69,23 @@
         <h2>+52-433-456-67-56<br>Пляж Барра Вьеха, Мексика, Герреро, Акапулько</h2>
       </div>
       <div class="footer go-up"></div>
+    </div>
+
+    <div class="modal-background">
+      <div class="modal-forma">
+        <form class="" action="index.html" method="post">
+          <h2 class="forma-txt">Консультация и запись</h2>
+          <input type="text" name="name" value="" placeholder="имя">
+          <input type="text" name="phone" value="" placeholder="телефон">
+          <button type="button" name="signup-modal-forma">Записаться</button>
+        </form>
+      </div>
+      <div class="modal-reply">
+        <h2 class="modal-reply-text"></h2>
+        <form class="" action="index.html" method="post">
+        <button type="button" name="close">Закрыть</button>
+        </form>
+      </div>
     </div>
 
   </body>

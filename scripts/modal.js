@@ -58,4 +58,7 @@ $(document).ready(function() {
   $(".modal-reply").on("click", function(event) {
     event.stopPropagation();
   });
+  $(".menu-li-sighup").on("click", function(event) {
+    ShowModalForma();
+  });
 });
