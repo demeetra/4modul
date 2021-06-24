@@ -64,4 +64,7 @@ $(document).ready(function() {
   $(".book-btn").on("click", function(event) {
     ShowReply("Спасибо за покупку!");
   });
+  $(".menu-buter-image").on("click", function(event) {
+    $(".menu").show();
+  });
 });

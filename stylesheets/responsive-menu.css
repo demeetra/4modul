@@ -1,0 +1,104 @@
+@media only screen and (max-width: 768px) {
+    /* 320–475 (iPhone SE) */
+  .grid-menu {
+    grid-template-areas:  '.           .          .            .             .'
+                          '.           .          .            .             .'
+                          '.           logo       .           menu           .'
+                          '.           .          .           .              .';
+    grid-template-columns: calc(100vw * 40/1440) 2fr 2fr 2fr calc(100vw * 40/1440);
+  }
+  .menu-buter {
+    grid-area: menu;
+  }
+  .menu-buter-image {
+    display: inline-block;
+    float: right;
+    position: relative;
+    top: 10%;
+    width: 15%;
+    padding-bottom: 15%;
+    background-image: url('../images/buter.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+  .menu {
+      display: none;
+      position: absolute;
+      left: calc(100vw * (40*4 + 400*2)/1440);
+      top: calc(100vw * 40/1440);
+      width: calc(100vw * 400 / 1440);
+      border: calc(100vw * 4 / 1440) solid white;
+      background-color: black;
+      border-radius: 10% / 5%;
+      box-sizing: border-box;
+      text-align: center;
+      z-index: 10;
+  }
+  .menu > ul > li {
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 10% / 20%;
+  }
+  .menu > ul > li > ul > li:first-child {
+    display: none;
+  }
+  .menu > ul > li > ul > li > h2 {
+    font-family: "Montserrat-Light";
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .menu-buter {
+    display: none;
+  }
+  .menu {
+    grid-area: menu;
+    border-radius: 5% / 50%;
+    border: calc(100vw * 4 / 1440) solid white;
+  }
+  .menu > ul {
+    display: inline-table;
+    height: calc(100% + 8px);
+    width: calc(100% + 8px);
+    margin: -4px -4px -4px -4px;
+  }
+  .menu > ul > li {
+    display: table-cell;
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 20% / 50%;
+  }
+  .menu > ul > li:hover {
+    border: calc(100vw * 4 / 1440) solid white;
+  }
+  .menu > ul > li > ul {
+    display: none;
+    position: absolute;
+    top: calc(100vw * 40/1440);
+    width: calc(100vw * 210 / 1440);
+    border: calc(100vw * 4 / 1440) solid white;
+    background-color: black;
+    border-radius: 20% / 20%;
+    box-sizing: border-box;
+  }
+  .menu > ul > li:hover > ul {
+    z-index: 5;
+    display:inherit;
+    margin-left: calc(100vw * -4 / 1440);
+  }
+  .menu > ul > li > ul > li {
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 2.5%;
+    min-height: calc(100vw * 40 / 1440);
+    float:none;
+    display:list-item;
+    position: relative;
+  }
+
+}
