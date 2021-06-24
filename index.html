@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="stylesheets/responsive.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-
+    <script src="scripts/modal.js"></script>
   </head>
   <script type="text/javascript">
   $(function() {
@@ -37,7 +37,7 @@
             </ul>
           </li>
           <li onclick="location.href='octopus.html';" class=""><h2>стилисты</h2></li>
-          <li class=""><h2>запись</h2></li>
+          <li onclick="javascript:ShowModalForma()" class=""><h2>запись</h2></li>
         </ul>
       </div>
     </div>
@@ -101,10 +101,10 @@
       <div class="sign-up">
         <div class="forma">
           <form class="" action="index.html" method="post">
-            <h2 class="txt-sign-up">Консультация и запись</h2>
-            <input type="text" name="" value="" placeholder="имя">
-            <input type="text" name="" value="" placeholder="телефон">
-            <button type="submit" name="button">Записаться</button>
+            <h2 class="forma-txt">Консультация и запись</h2>
+            <input type="text" name="name" value="" placeholder="имя">
+            <input type="text" name="phone" value="" placeholder="телефон">
+            <button type="button" name="signup-forma">Записаться</button>
           </form>
         </div>
       </div>
@@ -118,6 +118,26 @@
       </div>
       <div class="footer go-up">
       </div>
+    </div>
+
+    <div class="modal-background">
+
+     <div class="modal-forma">
+        <form class="" action="index.html" method="post">
+          <h2 class="forma-txt">Консультация и запись</h2>
+          <input type="text" name="name" value="" placeholder="имя">
+          <input type="text" name="phone" value="" placeholder="телефон">
+          <button type="button" name="signup-modal-forma">Записаться</button>
+        </form>
+     </div>
+
+      <div class="modal-reply">
+        <h2 class="modal-reply-text"></h2>
+        <form class="" action="index.html" method="post">
+        <button type="button" name="close">Закрыть</button>
+        </form>
+      </div>
+
     </div>
 
   </body>
