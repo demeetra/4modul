@@ -27,45 +27,49 @@
   border-radius: 7% / 10%;
   cursor: pointer;
 }
-.merch1-txt h1, .merch2-txt h1, .merch3-txt h1, .merch4-txt h1{
-  margin-bottom: 3%;
+
+.merch-btn{
+  background-color: black;
+  opacity: 80%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  height: 100%;
 }
 .merch1{
   background-image: url('../images/merch1.svg');
+}
+.merch2{
+  background-image: url('../images/merch2.svg');
+}
+.merch3{
+  background-image: url('../images/merch3.svg');
+}
+.merch4{
+  background-image: url('../images/merch4.svg');
+}
+
+.merch1-grid{
   grid-area: merch1;
 }
-.merch1-txt{
-  grid-area: merch1-txt;
+.merch2-grid{
+  grid-area: merch2;
+}
+.merch3-grid{
+  grid-area: merch3;
+}
+.merch4-grid{
+  grid-area: merch4;
 }
 .merch-txt1{
   grid-area: merch-txt1;
 }
-.merch2{
-  background-image: url('../images/merch2.svg');
-  grid-area: merch2;
-}
-.merch2-txt{
-  grid-area: merch2-txt;
-}
 .merch-txt2{
   grid-area: merch-txt2;
 }
-.merch3{
-  background-image: url('../images/merch3.svg');
-  grid-area: merch3;
-}
-.merch3-txt{
-  grid-area: merch3-txt;
-}
 .merch-txt3{
   grid-area: merch-txt3;
-}
-.merch4{
-  background-image: url('../images/merch4.svg');
-  grid-area: merch4;
-}
-.merch4-txt{
-  grid-area: merch4-txt;
 }
 .merch-txt4{
   grid-area: merch-txt4;

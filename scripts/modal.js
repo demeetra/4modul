@@ -38,12 +38,12 @@ function SignUp(cls){
   }
   ShowReply(text);
 }
-function SetDisplay(event, target) {
+function SetDisplay(event, name, target) {
   let classes = event.target.className.split(/\s+/);
   for (let i = 0; i < classes.length; i++) {
     if (classes[i].endsWith("-grid")) {
-      console.log(".plakat-btn." + classes[i]);
-      $(".plakat-btn." + classes[i]).css("display", target);
+      console.log(name + "." + classes[i], target);
+      $(name + "." + classes[i]).css("display", target);
     }
   }
 }
@@ -76,6 +76,9 @@ $(document).ready(function() {
   $(".plakat-btn").on("click", function(event) {
     ShowReply("Спасибо за покупку!");
   });
+  $(".merch-btn").on("click", function(event) {
+    ShowReply("Спасибо за покупку!");
+  });
   $('.go-up').click(function(){
      $('html, body').animate({scrollTop:0}, 'slow');
   });
@@ -83,9 +86,15 @@ $(document).ready(function() {
     $(".menu").show();
   });
   $(".pricheska").mouseenter(function (event) {
-      SetDisplay(event, "flex");
+      SetDisplay(event, ".plakat-btn", "flex");
   });
   $(".plakat-btn").mouseleave(function (event) {
-    SetDisplay(event, "none");
+    SetDisplay(event, ".plakat-btn", "none");
+  });
+  $(".merch").mouseenter(function (event) {
+      SetDisplay(event, ".merch-btn", "flex");
+  });
+  $(".merch-btn").mouseleave(function (event) {
+    SetDisplay(event, ".merch-btn", "none");
   });
 });
