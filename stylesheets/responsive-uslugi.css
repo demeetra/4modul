@@ -1,0 +1,36 @@
+@media only screen and (max-width: 768px) {
+  .grid-uslugi-content{
+    grid-template-areas:  '.           .           .'
+                          '.           new-usluga  .'
+                          '.           .           .'
+                          '.           usluga1     .'
+                          '.           usl-txt1    .'
+                          '.           usluga2     .'
+                          '.           usl-txt2    .'
+                          '.           usluga3     .'
+                          '.           usl-txt3    .'
+                          '.           usluga4     .'
+                          '.           usl-txt4    .'
+                          '.           .           .'
+                          '.           .           .';
+    grid-template-columns: calc(100vw * 40/1440) repeat(1, 1fr) calc(100vw * 40/1440);
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .grid-uslugi-content{
+    grid-template-areas:  '.           .           .            .'
+                          '.           new-usluga  new-usluga   .'
+                          '.           .           .            .'
+                          '.           usluga1     usluga2      .'
+                          '.           usl-txt1    usl-txt2     .'
+                          '.           usluga3     .            .'
+                          '.           usl-txt3    .            .'
+                          '.           .           .            .'
+                          '.           usluga4     usluga4      .'
+                          '.           usl-txt4    .            .'
+                          '.           .           .            .'
+                          '.           .           .            .';
+    grid-template-columns: calc(100vw * 40/1440) repeat(2, 1fr) calc(100vw * 40/1440);
+  }
+}

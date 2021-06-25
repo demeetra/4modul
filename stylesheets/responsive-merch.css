@@ -1,0 +1,41 @@
+@media only screen and (max-width: 768px) {
+  .grid-merch-content{
+    grid-template-areas:  '.           .           .'
+                          '.           name-merch  .'
+                          'line-border line-border line-border'
+                          '.           .           .'
+                          '.           merch1      .'
+                          '.           merch-txt1  .'
+                          '.           merch2      .'
+                          '.           merch-txt2  .'
+                          '.           merch3      .'
+                          '.           merch-txt3  .'
+                          '.           merch4      .'
+                          '.           merch-txt4  .'
+                          '.           .           .'
+                          '.           .           .';
+    grid-template-columns: calc(100vw * 40/1440) repeat(1, 1fr) calc(100vw * 40/1440);
+  }
+  .line-border2 {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .grid-merch-content{
+    grid-template-areas:  '.           .           .           .'
+                          '.           name-merch  .           .'
+                          'line-border line-border line-border line-border'
+                          '.           .           .           .'
+                          '.           merch1      merch2      .'
+                          '.           merch-txt1  merch-txt2  .'
+                          '.           merch3      merch4      .'
+                          '.           merch-txt3  merch-txt4  .'
+                          '.           .           .           .'
+                          '.           .           .           .';
+    grid-template-columns: calc(100vw * 40/1440) repeat(2, 1fr) calc(100vw * 40/1440);
+  }
+  .line-border2 {
+    display: none;
+  }
+}

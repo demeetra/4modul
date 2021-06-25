@@ -1,0 +1,63 @@
+@media only screen and (max-width: 768px) {
+  .grid-paric-content{
+    grid-template-areas:  '.           .           .'
+                          '.           name-paric  .'
+                          'line-border line-border line-border'
+                          '.           .           .'
+                          '.           pricheska1  .'
+                          '.           pr-txt1     .'
+                          '.           prich-txt1  .'
+                          '.           .           .'
+                          '.           pricheska2  .'
+                          '.           pr-txt2     .'
+                          '.           prich-txt2  .'
+                          '.           .           .'
+                          '.           pricheska3  .'
+                          '.           pr-txt3     .'
+                          '.           prich-txt3  .'
+                          '.           .           .'
+                          '.           pricheska4 .'
+                          '.           pr-txt4     .'
+                          '.           prich-txt4  .'
+                          '.           .           .'
+                          '.           pricheska5 .'
+                          '.           pr-txt5     .'
+                          '.           prich-txt5  .'
+                          '.           .           .'
+                          '.           pricheska6 .'
+                          '.           pr-txt6     .'
+                          '.           prich-txt6  .'
+                          '.           .           .'
+                          '.           .           .';
+    grid-template-columns: calc(100vw * 40/1440) repeat(1, 1fr) calc(100vw * 40/1440);
+  }
+  .line-border2 {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .grid-paric-content{
+    grid-template-areas:  '.           .           .           .'
+                          '.           name-paric  .           .'
+                          'line-border line-border line-border line-border'
+                          '.           .           .           .'
+                          '.           pricheska1  pricheska2  .'
+                          '.           pr-txt1     pr-txt2     .'
+                          '.           prich-txt1  prich-txt2  .'
+                          '.           .           .           .'
+                          '.           pricheska3  pricheska4  .'
+                          '.           pr-txt3     pr-txt4     .'
+                          '.           prich-txt3  prich-txt4  .'
+                          '.           .           .           .'
+                          '.           pricheska5  pricheska6  .'
+                          '.           pr-txt5     pr-txt6     .'
+                          '.           prich-txt5  prich-txt6  .'
+                          '.           .           .           .'
+                          '.           .           .           .';
+    grid-template-columns: calc(100vw * 40/1440) repeat(2, 1fr) calc(100vw * 40/1440);
+  }
+  .line-border2 {
+    display: none;
+  }
+}

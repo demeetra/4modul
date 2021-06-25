@@ -1,0 +1,57 @@
+@media only screen and (max-width: 768px) {
+  .grid-octopus-content{
+    grid-template-areas:  '.           .           .           .'
+                          '.           .           .           .'
+                          '.           octopus1    octopus2    .'
+                          '.           tx-oct1     tx-oct2     .'
+                          '.           .           .           .'
+                          '.           .           .           .'
+                          '.           octopus3    octopus4    .'
+                          '.           tx-oct3     tx-oct4     .'
+                          '.           .           .           .'
+                          '.           .           .           .'
+                          '.           octopus5    octopus6    .'
+                          '.           tx-oct5     tx-oct6     .'
+                          '.           .           .           .'
+                          '.           .           .           .'
+                          '.           octopus7    octopus8    .'
+                          '.           tx-oct7     tx-oct8     .'
+                          '.           .           .           .'
+                          '.           .           .           .'
+                          '.           octopus9    octopus10   .'
+                          '.           tx-oct9     tx-oct10    .'
+                          '.           .           .           .'
+                          '.           .           .           .'
+                          '.           octopus11   octopus12   .'
+                          '.           tx-oct11    tx-oct12    .'
+                          '.           .           .           .'
+                          '.           .           .           .';
+    grid-template-columns: calc(100vw * 40/1440) repeat(2, 1fr) calc(100vw * 40/1440);
+  }
+  .line-border2 {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .grid-octopus-content{
+    grid-template-areas:  '.           .           .           .             .           .'
+                          '.           .           .           .             .           .'
+                          '.           octopus1    octopus2    octopus3      octopus4    .'
+                          '.           tx-oct1     tx-oct2     tx-oct3       tx-oct4     .'
+                          '.           .           .           .             .           .'
+                          '.           .           .           .             .           .'
+                          '.           octopus5    octopus6    octopus7      octopus8    .'
+                          '.           tx-oct5     tx-oct6     tx-oct7       tx-oct8     .'
+                          '.           .           .           .             .           .'
+                          '.           .           .           .             .           .'
+                          '.           octopus9    octopus10   octopus11     octopus12   .'
+                          '.           tx-oct9     tx-oct10    tx-oct11      tx-oct12    .'
+                          '.           .           .           .             .           .'
+                          '.           .           .           .             .           .';
+    grid-template-columns: calc(100vw * 40/1440) repeat(4, 1fr) calc(100vw * 40/1440);
+  }
+  .line-border2 {
+    display: none;
+  }
+}

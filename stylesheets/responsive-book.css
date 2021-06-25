@@ -1,0 +1,47 @@
+@media only screen and (max-width: 768px) {
+  .grid-book-content{
+    grid-template-areas:  '.            .             .'
+                          '.            name-book     .'
+                          'line-border  line-border   line-border'
+                          '.            .             .'
+                          '.            book-sale     .'
+                          '.            book-txt2     .'
+                          '.            book-btn      .'
+                          '.            .             .'
+                          '.            .             .';
+    grid-template-columns: calc(100vw * 40/1440) repeat(1, 1fr) calc(100vw * 40/1440);
+  }
+  .line-border2, .book-img1, .book-img2, .book-img3 {
+    display: none;
+  }
+  .book-btn {
+    border-radius: 10% / 50%;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .grid-book-content{
+    grid-template-areas:  '.            .             .            .'
+                          '.            name-book     .            .'
+                          'line-border  line-border   line-border  line-border '
+                          '.            .            .             .'
+                          '.            book-img2    book-img2     .'
+                          '.            book-img3    book-img3     .'
+                          '.            .             .            .'
+                          '.            book-sale     book-txt2    .'
+                          '.            book-sale     book-btn     .'
+                          '.            book-sale     .            .'
+                          '.            .             .            .'
+                          '.            .             .            .';
+    grid-template-columns: calc(100vw * 40/1440) repeat(2, 1fr) calc(100vw * 40/1440);
+  }
+  .line-border2, .book-img1 {
+    display: none;
+  }
+  .book-btn {
+    width: 70%;
+  }
+  .pr-txt2 {
+    width: 16%;
+  }
+}

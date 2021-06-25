@@ -1,4 +1,9 @@
-@import 'responsive-common.css';
-@import 'responsive-menu.css';
-@import 'responsive-index.css';
-@import 'responsive-footer.css';
+@import "responsive-common.css";
+@import "responsive-menu.css";
+@import "responsive-index.css";
+@import "responsive-footer.css";
+@import "responsive-uslugi.css";
+@import "responsive-paric.css";
+@import "responsive-merch.css";
+@import "responsive-octopus.css";
+@import "responsive-book.css";
